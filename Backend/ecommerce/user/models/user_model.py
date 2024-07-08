@@ -28,8 +28,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     createdAt = models.DateTimeField(default=timezone.now)
     updatedAt = models.DateTimeField(auto_now=True)
     role = models.CharField(max_length=50, blank=True, null=True)
-    # first_name = models.CharField(max_length=50, blank=True, null=True)
-    # last_name = models.CharField(max_length=50, blank=True, null=True)
 
     objects = CustomUserManager()
 
