@@ -102,6 +102,7 @@ REST_AUTH = {
     'JWT_AUTH_COOKIE': 'my-app-auth',
     'JWT_AUTH_REFRESH_COOKIE': 'my-refresh-token',
     'USER_DETAILS_SERIALIZER': 'user.serializers.UserSerializer',
+    'REGISTER_SERIALIZER': 'user.serializers.CustomRegisterSerializer',
 
 }
 SITE_ID = 1
