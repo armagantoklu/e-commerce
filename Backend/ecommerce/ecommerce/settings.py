@@ -22,7 +22,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth',
     'dj_rest_auth.registration',
-    'user'
+    'user',
+    'role',
+    'productType'
 ]
 
 MIDDLEWARE = [
@@ -95,7 +97,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-    )
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'ecommerce.helpers.CustomPagination',
+    'PAGE_SIZE': 10
 }
 REST_AUTH = {
     'USE_JWT': True,

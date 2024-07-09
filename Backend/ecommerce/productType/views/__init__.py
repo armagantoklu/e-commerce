@@ -1,0 +1,1 @@
+from .productType_view import ProductTypeAPIView
