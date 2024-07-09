@@ -24,7 +24,8 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
     'user',
     'role',
-    'productType'
+    'productType',
+    'product'
 ]
 
 MIDDLEWARE = [
