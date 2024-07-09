@@ -25,7 +25,9 @@ INSTALLED_APPS = [
     'user',
     'role',
     'productType',
-    'product'
+    'product',
+    'orderSession',
+    'order'
 ]
 
 MIDDLEWARE = [
@@ -104,12 +106,11 @@ REST_FRAMEWORK = {
 }
 REST_AUTH = {
     'USE_JWT': True,
-    'JWT_AUTH_COOKIE': 'my-app-auth',
-    'JWT_AUTH_REFRESH_COOKIE': 'my-refresh-token',
     'USER_DETAILS_SERIALIZER': 'user.serializers.UserSerializer',
     'REGISTER_SERIALIZER': 'user.serializers.CustomRegisterSerializer',
-
 }
+
+AUTH_TOKEN_VALIDITY = 60 * 60 * 24 * 7
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
