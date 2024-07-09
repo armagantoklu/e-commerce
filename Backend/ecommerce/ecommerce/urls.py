@@ -30,5 +30,6 @@ urlpatterns = [
     path('api/message-session', include('messageSession.urls')),
     path('api/message', include('message.urls')),
     path('api/feedback-type', include('feedbackType.urls')),
+    path('api/feedback', include('feedback.urls')),
 
 ]
