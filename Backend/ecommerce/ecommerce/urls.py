@@ -29,5 +29,6 @@ urlpatterns = [
     path('api/order', include('order.urls')),
     path('api/message-session', include('messageSession.urls')),
     path('api/message', include('message.urls')),
+    path('api/feedback-type', include('feedbackType.urls')),
 
 ]

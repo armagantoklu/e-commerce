@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'orderSession',
     'order',
     'messageSession',
-    'message'
+    'message',
+    'feedbackType'
 ]
 
 MIDDLEWARE = [

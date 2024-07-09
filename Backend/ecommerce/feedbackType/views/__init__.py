@@ -1,0 +1,1 @@
+from .feedbackType_view import FeedbackTypeAPIView
