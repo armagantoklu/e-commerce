@@ -27,5 +27,6 @@ urlpatterns = [
     path('api/product', include('product.urls')),
     path('api/order-session', include('orderSession.urls')),
     path('api/order', include('order.urls')),
+    path('api/message-session', include('messageSession.urls')),
 
 ]

@@ -1,3 +1,4 @@
+from datetime import timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +28,8 @@ INSTALLED_APPS = [
     'productType',
     'product',
     'orderSession',
-    'order'
+    'order',
+    'messageSession'
 ]
 
 MIDDLEWARE = [
@@ -109,8 +111,11 @@ REST_AUTH = {
     'USER_DETAILS_SERIALIZER': 'user.serializers.UserSerializer',
     'REGISTER_SERIALIZER': 'user.serializers.CustomRegisterSerializer',
 }
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+}
 
-AUTH_TOKEN_VALIDITY = 60 * 60 * 24 * 7
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
