@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     'product',
     'orderSession',
     'order',
-    'messageSession'
+    'messageSession',
+    'message'
 ]
 
 MIDDLEWARE = [

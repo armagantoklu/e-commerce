@@ -28,5 +28,6 @@ urlpatterns = [
     path('api/order-session', include('orderSession.urls')),
     path('api/order', include('order.urls')),
     path('api/message-session', include('messageSession.urls')),
+    path('api/message', include('message.urls')),
 
 ]
