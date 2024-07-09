@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'messageSession',
     'message',
     'feedbackType',
-    'feedback'
+    'feedback',
+    'discount'
 
 ]
 

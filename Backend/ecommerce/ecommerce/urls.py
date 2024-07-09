@@ -31,5 +31,6 @@ urlpatterns = [
     path('api/message', include('message.urls')),
     path('api/feedback-type', include('feedbackType.urls')),
     path('api/feedback', include('feedback.urls')),
+    path('api/discount', include('discount.urls')),
 
 ]
