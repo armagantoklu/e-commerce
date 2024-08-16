@@ -1,5 +1,12 @@
 {
-    "common":{
-        "hi":"selam"
-    }
+  "navbar": {
+    "home": "Ana Sayfa",
+    "shop": "Alıș Veriș",
+    "myAccount": "Hesabım",
+    "contact": "İletișim",
+    "about": "Hakkımızda"
+  },
+  "common": {
+    "hi": "Merhaba!"
+  }
 }
