@@ -3,10 +3,32 @@
     "home": "Home",
     "shop": "Shop",
     "myAccount": "My Account",
+    "orders": "Orders",
+    "addresses": "Addresses",
+    "accountDetails": "Account Details",
     "contact": "Contacts",
     "about": "About"
   },
   "common": {
     "hi": "hello"
+  },
+  "register": {
+    "nationalId": "National Id",
+    "username": "Username",
+    "email": "E-mail",
+    "password1": "Password",
+    "password2": "Re-Password",
+    "role": "Role",
+    "age": "Age",
+    "first_name": "first_name",
+    "last_name": "last_name",
+    "register": "Register"
+  },
+  "register-error-messages":{
+    "required":"Required Field",
+    "nationalId":"National ID must be exactly 11 characters",
+    "email":"Please enter a valid email",
+    "age":"Can only contain positive number characters",
+    "number":"Just number characters"
   }
 }
