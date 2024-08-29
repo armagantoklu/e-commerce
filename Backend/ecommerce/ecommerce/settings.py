@@ -7,7 +7,8 @@ SECRET_KEY = 'django-insecure-34((k2p-lr%yj0g6l86oiysmf3-h=rh)0776+awq&7a*mey$ys
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
+
 APP_NAME = 'ecommerce'
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -21,6 +22,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'corsheaders',
     'dj_rest_auth',
     'dj_rest_auth.registration',
     'user',
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -100,6 +103,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'

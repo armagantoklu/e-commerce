@@ -4,7 +4,7 @@ export default function Home() {
   const t = useTranslations("common")
   return (
     <div>
-      <p className="font-bold">{t('hi')}</p>
+      <p className="font-bold">{t('hi')} home</p>
     </div>
   );
 }
