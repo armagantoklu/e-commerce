@@ -8,7 +8,12 @@ SECRET_KEY = 'django-insecure-34((k2p-lr%yj0g6l86oiysmf3-h=rh)0776+awq&7a*mey$ys
 
 DEBUG = True
 
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOWED_ORIGIN_REGEXES = [r"*"]
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_METHODS = ["*"]
+CORS_ALLOW_HEADERS = ["*"]
+CSRF_TRUSTED_ORIGINS_REGEXES = [r"*"]
 
 APP_NAME = 'ecommerce'
 INSTALLED_APPS = [
