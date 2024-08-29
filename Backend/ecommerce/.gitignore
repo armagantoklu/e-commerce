@@ -50,4 +50,3 @@ manage.py
 .DS_Store
 
 drf_example
-.env
